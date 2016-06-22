@@ -11,6 +11,9 @@ everyone just grep help for what they need?"). We should have more intuitive com
 ##General help improvements
 The whole help should be visible on one screen. It's ridiculous to have to scroll so much to
 find what you're looking for. All commands top level commands should be listed on one page.
+Presently people expect to have to grep for the command they are looking for. They shouldn't
+have to. They should be able to guess the command, or at least ask for help in a specific
+topic to find what they need.
 
 ##Thoughts on `object verb` command structure
 This sounded great to me at first, but after some discussion about BOSH moving

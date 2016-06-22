@@ -1,6 +1,6 @@
 api                                    api // DO WE NEED THIS?
 auth                                   auth // DO WE NEED THIS?
-check-route                            Perform a simple check to determine whether a route currently exists or not			DO WE NEED THIS COMMAND?
+check-route                            Perform a simple check to determine whether a route currently exists or not			                    DO WE NEED THIS COMMAND?
 copy-source                            Make a copy of app source code from one application to another.  Unless overridden, the copy-source command will restart the application.
 curl                                   Executes a request to the targeted API endpoint
 help                                   help
@@ -10,9 +10,9 @@ ssh                                    SSH to an application container instance
 target                                 target
 version                                version
 delete-orphaned-routes                 Delete all orphaned routes (i.e. those that are not mapped to an app)
-migrate-service-instances                		DO WE NEED THIS COMMAND?
+migrate-service-instances              DO WE NEED THIS COMMAND?
 
-push-app			       push
+push-app			                         push
 delete-app                             delete
 restage-app                            restage
 scale-app                              scale
@@ -24,13 +24,13 @@ restart-app-instance                   restart-app-instance
 share-private-domain                   Share a private domain with an org
 unshare-private-domain                 Unshare a private domain with an org
 
-add-plugin 			       install-plugin
+add-plugin 			                       install-plugin
 remove-plugin                          uninstall-plugin
-add-plugin-repo			       add-plugin-repo
+add-plugin-repo			                   add-plugin-repo
 remove-plugin-repo                     remove-plugin-repo
 add-route                              map-route // I DON"T KNOW ABOUT THIS ONE
 remove-route                           unmap-route
-add-org-quota                              set-quota // WHY DOES THIS NOT HAVE A COMPLEMENT?
+add-org-quota                          set-quota // WHY DOES THIS NOT HAVE A COMPLEMENT?
 add-space-quota                        set-space-quota
 remove-space-quota                     unset-space-quota
 
@@ -65,7 +65,7 @@ delete-space-quota                     Delete a space quota definition and unass
 create-user                            Create a new user
 delete-user                            Delete a user
 delete-service-instance                purge-service-instance // WHAT IS THE COMPLEMENT TO THIS?
-delete-service-offering		       purge-service-offering // WHAT IS THE COMPLEMENT TO THIS?
+delete-service-offering		             purge-service-offering // WHAT IS THE COMPLEMENT TO THIS?
 
 bind-route-service                     bind-route-service
 unbind-route-service                   Unbind a service instance from an HTTP route
@@ -75,7 +75,7 @@ bind-security-group                    bind-security-group 		IS THE DIFFERENCE
 unbind-security-group                  Unbind a security group from a space
 bind-service                           bind-service
 unbind-service                         Unbind a service instance from an app
-bind-staging-security-group            							AND THIS ONE?
+bind-staging-security-group            AND THIS ONE?
 unbind-staging-security-group          Unbind a security group from the set of security groups for staging applications
 
 disable-feature-flag                   Disable the use of a feature so that users have access to and can use the feature
@@ -83,7 +83,7 @@ enable-feature-flag                    Enable the use of a feature so that users
 disable-service-access                 Disable access to a service or service plan for one or all orgs
 enable-service-access                  Enable access to a service or service plan for one or all orgs
 disable-space-ssh                      disallow-space-ssh
-enable-ssh-space		       allow-space-ssh
+enable-ssh-space		                   allow-space-ssh
 disable-ssh                            Disable ssh for the application
 enable-ssh                             Enable ssh for the application
 
@@ -135,7 +135,7 @@ show-app                               app
 show-running-environment-variable-group          running-environment-variable-group COULDN't running/staging BE A FLAG ON environment-variable-group COMMAND?
 show-feature-flag                      feature-flag
 show-health-check                      get-health-check
-show-logs			       logs
+show-logs			                         logs
 show-marketplace                       marketplace
 show-org                               org
 show-org-quota                         quota
@@ -149,7 +149,7 @@ show-space-ssh-status                  space-ssh-allowed
 show-ssh-code                          ssh-code
 show-ssh-status                        ssh-enabled
 show-stack                             stack
-show-staging-environment-variable-group DO WE NEED THIS TO BE A SEPARATE COMMAND?   staging-environment-variable-group 
+show-staging-environment-variable-group DO WE NEED THIS TO BE A SEPARATE COMMAND?   staging-environment-variable-group
 show-token                             oauth-token
 
 update-buildpack                       Update a buildpack
