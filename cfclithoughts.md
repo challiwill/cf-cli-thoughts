@@ -5,7 +5,7 @@ mostly use. We cannot move in this direction while keeping indefinite backwards 
 because it changes the structure of commands. We need an opportunity to make breaking changes.
 When we experiemented with rewriting from scratch we ended up with the same flat structure
 because our current commands demand that. This creates disorganized code, reduces how code
-can be reused between commands, and makes for a challenging user experience (Aakash: "doesn't
+can be reused between commands, and makes for a challenging user experience ("doesn't
 everyone just grep help for what they need?"). We should have tiered commands like bosh.
 
 ##General help improvements
