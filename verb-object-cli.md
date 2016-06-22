@@ -1,0 +1,164 @@
+api                                    api // DO WE NEED THIS?
+auth                                   auth // DO WE NEED THIS?
+check-route                            Perform a simple check to determine whether a route currently exists or not			DO WE NEED THIS COMMAND?
+copy-source                            Make a copy of app source code from one application to another.  Unless overridden, the copy-source command will restart the application.
+curl                                   Executes a request to the targeted API endpoint
+help                                   help
+login                                  login
+logout                                 logout
+ssh                                    SSH to an application container instance
+target                                 target
+version                                version
+delete-orphaned-routes                 Delete all orphaned routes (i.e. those that are not mapped to an app)
+migrate-service-instances                		DO WE NEED THIS COMMAND?
+
+push-app			       push
+delete-app                             delete
+restage-app                            restage
+scale-app                              scale
+start-app                              start
+restart-app                            restart
+stop-app                               stop
+restart-app-instance                   restart-app-instance
+
+share-private-domain                   Share a private domain with an org
+unshare-private-domain                 Unshare a private domain with an org
+
+add-plugin 			       install-plugin
+remove-plugin                          uninstall-plugin
+add-plugin-repo			       add-plugin-repo
+remove-plugin-repo                     remove-plugin-repo
+add-route                              map-route // I DON"T KNOW ABOUT THIS ONE
+remove-route                           unmap-route
+add-org-quota                              set-quota // WHY DOES THIS NOT HAVE A COMPLEMENT?
+add-space-quota                        set-space-quota
+remove-space-quota                     unset-space-quota
+
+create-route                           Create a url route in a space for later use
+delete-route                           Delete a route
+create-app-manifest                    Create an app manifest for an app that has been pushed successfully
+create-buildpack                       Create a buildpack
+delete-buildpack                       Delete a buildpack
+create-domain                          Create a domain in an org for later use
+delete-domain                          Delete a domain
+create-org                             Create an org
+delete-org                             Delete an org
+create-org-quota                       create-quota
+delete-org-quota                       delete-quota
+create-security-group                  Create a security group
+delete-security-group                  Deletes a security group
+create-user-provided-service           Make a user-provided service instance available to CF apps // SHOULD THIS JUST BE A FLAG?
+create-service                         Create a service instance
+delete-service                         Delete a service instance
+create-service-auth-token              Create a service auth token
+delete-service-auth-token              Delete a service auth token
+create-service-broker                  Create a service broker
+delete-service-broker                  Delete a service broker
+create-service-key                     Create key for a service instance
+delete-service-key                     Delete a service key
+create-shared-domain                   Create a domain that can be used by all orgs (admin-only)
+delete-shared-domain                   Delete a shared domain
+create-space                           Create a space
+delete-space                           Delete a space
+create-space-quota                     Define a new space resource quota
+delete-space-quota                     Delete a space quota definition and unassign the space quota from all spaces
+create-user                            Create a new user
+delete-user                            Delete a user
+delete-service-instance                purge-service-instance // WHAT IS THE COMPLEMENT TO THIS?
+delete-service-offering		       purge-service-offering // WHAT IS THE COMPLEMENT TO THIS?
+
+bind-route-service                     bind-route-service
+unbind-route-service                   Unbind a service instance from an HTTP route
+bind-running-security-group            bind-running-security-group WHAT
+unbind-running-security-group          Unbind a security group from the set of security groups for running applications
+bind-security-group                    bind-security-group 		IS THE DIFFERENCE
+unbind-security-group                  Unbind a security group from a space
+bind-service                           bind-service
+unbind-service                         Unbind a service instance from an app
+bind-staging-security-group            							AND THIS ONE?
+unbind-staging-security-group          Unbind a security group from the set of security groups for staging applications
+
+disable-feature-flag                   Disable the use of a feature so that users have access to and can use the feature
+enable-feature-flag                    Enable the use of a feature so that users have access to and can use the feature
+disable-service-access                 Disable access to a service or service plan for one or all orgs
+enable-service-access                  Enable access to a service or service plan for one or all orgs
+disable-space-ssh                      disallow-space-ssh
+enable-ssh-space		       allow-space-ssh
+disable-ssh                            Disable ssh for the application
+enable-ssh                             Enable ssh for the application
+
+list-app                               apps
+list-app-events                        events
+list-buildpacks                        buildpacks
+list-domains                           domains
+list-env                               env
+list-feature-flags                     feature-flags
+list-files                             files
+list-org-users                         org-users
+list-orgs                              orgs
+list-plugin-repos                      List all the added plugin repositories
+list-plugins                           plugins
+list-org-quotas                        quotas
+list-repo-plugins                      repo-plugins // I DON"T LIKE HOW THIS ONE SOUNDS
+list-router-groups                     router-groups
+list-routes                            routes
+list-running-security-groups           running-security-groups
+list-security-groups                   securit-groups
+list-service-auth-tokens               service-auth-tokens
+list-service-brokers                   service-brokers
+list-service-keys                      service-keys
+list-services                          services
+list-space-quotas                      list-space-quotas
+list-space-users                       space-users
+list-spaces                            spaces
+list-stacks                            stacks
+list-staging-security-groups           staging-security-groups
+
+rename-app                             rename
+rename-buildpack                       Rename a buildpack
+rename-org                             Rename an org
+rename-service                         Rename a service instance
+rename-service-broker                  Rename a service broker
+rename-space                           Rename a space
+
+set-env                                Set an env variable for an app
+unset-env                              Remove an env variable
+set-org-role                           Assign an org role to a user
+unset-org-role
+set-space-role                         Assign a space role to a user
+unset-space-role                       Remove a space role from a user
+set-health-check                       Set health_check_type flag to either 'port' or 'none'
+set-running-environment-variable-group Pass parameters as JSON to create a running environment variable group // WHY DOES THIS NOT HAVE AN UNSET?
+set-staging-environment-variable-group Pass parameters as JSON to create a staging environment variable group // WHY DOES THIS NOT HAVE AN UNSET?
+
+show-app                               app
+show-running-environment-variable-group          running-environment-variable-group COULDN't running/staging BE A FLAG ON environment-variable-group COMMAND?
+show-feature-flag                      feature-flag
+show-health-check                      get-health-check
+show-logs			       logs
+show-marketplace                       marketplace
+show-org                               org
+show-org-quota                         quota
+show-security-group                    securit-group
+show-service-instance                  service
+show-service-access                    service-access
+show-service-key                       service-key
+show-space                             space
+show-space-quota                       space-quota
+show-space-ssh-status                  space-ssh-allowed
+show-ssh-code                          ssh-code
+show-ssh-status                        ssh-enabled
+show-stack                             stack
+show-staging-environment-variable-group DO WE NEED THIS TO BE A SEPARATE COMMAND?   staging-environment-variable-group 
+show-token                             oauth-token
+
+update-buildpack                       Update a buildpack
+update-config                          config
+update-password                        passwd
+update-org-quota                       update-quota
+update-security-group                  Update a security group
+update-service                         Update a service instance
+update-service-auth-token              Update a service auth token
+update-service-broker                  Update a service broker
+update-space-quota                     Update an existing space quota
+update-user-provided-service           Update user-provided service instance
