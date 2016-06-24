@@ -1,6 +1,5 @@
 api
 auth
-check-route
 config-update
 copy-source
 curl
@@ -82,6 +81,7 @@ private-domain-share
 private-domain-unshare
 
 route-add
+route-check
 route-create
 route-delete
 route-list
